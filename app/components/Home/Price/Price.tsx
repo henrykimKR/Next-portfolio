@@ -10,7 +10,7 @@ const Price = () => {
 				headingSub="Price"
 			/>
 			<div className="w-[80%] mx-auto grid grid-cols-1 gap-[2rem] lg:gap-0 sm:grid-cols-2 lg:grid-cols-3 items-center pt-[4rem] md:pt-[7rem] ">
-				<div>
+				<div data-aos="fade-right" data-aos-anchor-placement="top-center">
 					<Pricecard
 						plan="Basic"
 						price="10$"
@@ -19,7 +19,11 @@ const Price = () => {
 						bg="bg-orange-700"
 					/>
 				</div>
-				<div>
+				<div
+					data-aos="fade-right"
+					data-aos-anchor-placement="top-center"
+					data-aos-delay="200"
+				>
 					<Pricecard
 						plan="Popular"
 						price="20$"
@@ -28,7 +32,11 @@ const Price = () => {
 						bg="bg-pink-900"
 					/>
 				</div>
-				<div>
+				<div
+					data-aos="fade-right"
+					data-aos-anchor-placement="top-center"
+					data-aos-delay="400"
+				>
 					<Pricecard
 						plan="Premium"
 						price="40$"

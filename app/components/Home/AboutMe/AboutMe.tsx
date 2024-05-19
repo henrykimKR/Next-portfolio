@@ -38,7 +38,13 @@ const AboutMe = () => {
 					/>
 				</div>
 				{/* Image */}
-				<Image src={AboutImage} alt="About" className="mx-auto" />
+				<Image
+					data-aos="zoom-in"
+					data-aos-anchor-placement="top-center"
+					src={AboutImage}
+					alt="About"
+					className="mx-auto"
+				/>
 			</div>
 		</div>
 	);
