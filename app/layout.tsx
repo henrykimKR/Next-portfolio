@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Oswald } from 'next/font/google';
 import './globals.css';
 import ResponsiveNav from './components/Home/Nav/ResponsiveNav';
+import Footer from './components/Home/Footer/Footer';
 
 const oswald = Oswald({
 	weight: ['200', '300', '400', '500', '600', '700'],
@@ -23,6 +24,7 @@ export default function RootLayout({
 			<body className={`${oswald.className} bg-[#212428]`}>
 				<ResponsiveNav />
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);
