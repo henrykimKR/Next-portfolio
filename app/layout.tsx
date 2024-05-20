@@ -10,7 +10,7 @@ const oswald = Oswald({
 });
 
 export const metadata: Metadata = {
-	title: 'Henry Kim | Portfolio',
+	title: 'Hoon Kim | Portfolio',
 	description: 'Portfolio Websiteß',
 };
 

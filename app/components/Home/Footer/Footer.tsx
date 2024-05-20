@@ -8,7 +8,7 @@ const Footer = () => {
 				{/* first part */}
 				<div>
 					<div className="text-[35px] font-semibold text-white">
-						Hen<span className="text-red-500">R</span>y
+						Hoo<span className="text-red-500">N</span>
 					</div>
 					<h1 className="text-[14px] mt-[0.5rem] text-white opacity-70">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quis
@@ -17,7 +17,7 @@ const Footer = () => {
 						facilis voluptate!
 					</h1>
 					<p className="mt-[1.3rem] text-yellow-300 underline font-semibold">
-						shhenrykim@gmail.com
+						hoonkim.tech@gmail.com
 					</p>
 				</div>
 				{/* second part */}
@@ -52,7 +52,7 @@ const Footer = () => {
 					<div className="flex items-center mt-[1rem] space-x-2 ">
 						<BiEnvelope className="w-[1rem] h-[1rem] text-yellow-400 " />
 						<p className="text-[17px] font-normal text-white opacity-75">
-							shhenrykim@gmail.com
+							hoonkim.tech@gmail.com
 						</p>
 					</div>
 					<div className="flex items-center mt-[1rem] space-x-2 ">
@@ -64,7 +64,7 @@ const Footer = () => {
 				</div>
 			</div>
 			<div className="mt-[1.4rem] w-[80%] mx-auto text-white opacity-70">
-				&#169; Copyright Henry Kim
+				&#169; Copyright Hoon Kim
 			</div>
 		</div>
 	);

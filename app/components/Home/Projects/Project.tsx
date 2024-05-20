@@ -4,10 +4,10 @@ import Image from 'next/image';
 
 const Project = () => {
 	return (
-		<div className="pt-[5rem] pb-[3rem] ">
-			<Heading headingPrimary="Explore My Project" headingSub="Project" />
+		<div className="mt-[5rem] mb-[3rem]" id="projects">
+			<Heading headingPrimary="Explore My Projects" headingSub="Project" />
 			<div className="w-[80%] pt-[2rem] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem]">
-				<div data-aos="fade-up" data-aos-anchor-placement="top-center">
+				<div data-aos="fade-up">
 					{/* Image */}
 					<div className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]">
 						<Image
@@ -19,11 +19,7 @@ const Project = () => {
 						/>
 					</div>
 				</div>
-				<div
-					data-aos="fade-up"
-					data-aos-anchor-placement="top-center"
-					data-aos-delay="200"
-				>
+				<div data-aos="fade-up" data-aos-delay="200">
 					{/* Image */}
 					<div className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]">
 						<Image
@@ -35,11 +31,7 @@ const Project = () => {
 						/>
 					</div>
 				</div>
-				<div
-					data-aos="fade-up"
-					data-aos-anchor-placement="top-center"
-					data-aos-delay="400"
-				>
+				<div data-aos="fade-up" data-aos-delay="400">
 					{/* Image */}
 					<div className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]">
 						<Image
@@ -51,11 +43,7 @@ const Project = () => {
 						/>
 					</div>
 				</div>
-				<div
-					data-aos="fade-up"
-					data-aos-anchor-placement="top-center"
-					data-aos-delay="600"
-				>
+				<div data-aos="fade-up" data-aos-delay="600">
 					{/* Image */}
 					<div className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]">
 						<Image
@@ -67,11 +55,7 @@ const Project = () => {
 						/>
 					</div>
 				</div>
-				<div
-					data-aos="fade-up"
-					data-aos-anchor-placement="top-center"
-					data-aos-delay="800"
-				>
+				<div data-aos="fade-up" data-aos-delay="800">
 					{/* Image */}
 					<div className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]">
 						<Image
@@ -83,11 +67,7 @@ const Project = () => {
 						/>
 					</div>
 				</div>
-				<div
-					data-aos="fade-up"
-					data-aos-anchor-placement="top-center"
-					data-aos-delay="1000"
-				>
+				<div data-aos="fade-up" data-aos-delay="1000">
 					{/* Image */}
 					<div className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]">
 						<Image

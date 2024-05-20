@@ -3,7 +3,7 @@ import Heading from '../../Helper/Heading';
 
 const Contact = () => {
 	return (
-		<div className="pt-[5rem] pb-[3rem]">
+		<div className="pt-[5rem] pb-[3rem]" id="contact">
 			<Heading headingPrimary="Get In Touch with us" headingSub="Contact Us" />
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-[2rem] mt-[4rem] items-center w-[80%] m-auto">
 				{/* Info content */}

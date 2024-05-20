@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const AboutMe = () => {
 	return (
-		<div className="mt-[5rem] mb-[3rem]">
+		<div className="mt-[5rem] mb-[3rem]" id="about">
 			{/* Heading (props: headingPrimary, headingSub) */}
 			<Heading
 				headingPrimary="I Can Build Your Dream Website"
@@ -19,7 +19,7 @@ const AboutMe = () => {
 						Personal Infos :
 					</h1>
 					{/* AboutInfoBox (props: text1, text2) */}
-					<AboutInfoBox text1="First Name : Henry" text2="Last Name : Kim" />
+					<AboutInfoBox text1="First Name : Hoon" text2="Last Name : Kim" />
 					<AboutInfoBox
 						text1="Address : Halifax, NS, Canada"
 						text2="Phone : +1 647 869 7027"
@@ -29,7 +29,7 @@ const AboutMe = () => {
 						text2="Language : English, Korean"
 					/>
 					<AboutInfoBox
-						text1="Email : shhenrykim@gmail.com"
+						text1="Email : hoonkim.tech@gmail.com"
 						text2="LinkedIn : linkedin.com/in/henrykimkr"
 					/>
 					<AboutInfoBox

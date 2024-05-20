@@ -1,3 +1,4 @@
+import ScrollLink from '../ScrollLink';
 import { ImCross } from 'react-icons/im';
 import Link from 'next/link';
 import React from 'react';
@@ -26,24 +27,21 @@ const MobileNav = ({ closeNav, showNav }: Props) => {
 					<Link href="#">Home</Link>
 				</li>
 				<li className="navlink text-[25px] sm:text-[30px]">
-					<Link href="#">About</Link>
+					<ScrollLink to="about">About</ScrollLink>
 				</li>
 				<li className="navlink text-[25px] sm:text-[30px]">
-					<Link href="#">Services</Link>
+					<ScrollLink to="services">Services</ScrollLink>
 				</li>
 				<li className="navlink text-[25px] sm:text-[30px]">
-					<Link href="#">Portfolio</Link>
+					<ScrollLink to="projects">Projects</ScrollLink>
 				</li>
 				<li className="navlink text-[25px] sm:text-[30px]">
-					<Link href="#">Blog</Link>
-				</li>
-				<li className="navlink text-[25px] sm:text-[30px]">
-					<Link href="#">Contact</Link>
+					<ScrollLink to="contact">Contact</ScrollLink>
 				</li>
 				{/* Cross icon for closing the navbar */}
 				<ImCross
 					onClick={closeNav}
-					className="absolute top-[-1.4rem] right-[1.4rem] w-[1.4rem] h-[1.4rem] text-white"
+					className="absolute top-[-1.4rem] right-[1.4rem] w-[1.4rem] h-[1.4rem] text-white cursor-pointer"
 				/>
 			</ul>
 		</div>

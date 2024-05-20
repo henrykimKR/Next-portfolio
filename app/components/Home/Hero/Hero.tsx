@@ -49,7 +49,7 @@ const Hero = () => {
 						data-aos-delay="600"
 						className="text-[35px] lg:text-[45px] xl:text-[60px] font-bold text-white"
 					>
-						Henry <span className="text-red-500">Kim!</span>
+						Hoon <span className="text-red-500">Kim!</span>
 					</h1>
 					<h1
 						data-aos="fade-left"
