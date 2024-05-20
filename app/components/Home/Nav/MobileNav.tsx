@@ -1,6 +1,5 @@
-import ScrollLink from '../ScrollLink';
+import ScrollLink from '../../Helper/ScrollLink';
 import { ImCross } from 'react-icons/im';
-import Link from 'next/link';
 import React from 'react';
 
 interface Props {
@@ -14,7 +13,6 @@ const MobileNav = ({ closeNav, showNav }: Props) => {
 
 	return (
 		<div>
-			{' '}
 			{/* OverLay */}
 			<div
 				className={`fixed ${navOpenStyle} top-0 transform transition-all duration-500 z-[10000] left-0 right-0 bottom-0 bg-black opacity-70 w-full h-[100vh]`}
@@ -24,19 +22,29 @@ const MobileNav = ({ closeNav, showNav }: Props) => {
 				className={`text-white ${navOpenStyle} fixed flex top-0 items-center justify-center flex-col h-[100vh] transform transition-all duration-300 delay-300 w-[80%] sm:w-[60%] bg-blue-500 space-y-10 z-[10006]`}
 			>
 				<li className="navlink text-[25px] sm:text-[30px]">
-					<Link href="#">Home</Link>
+					<ScrollLink to="home">
+						<div onClick={closeNav}>Home</div>
+					</ScrollLink>
 				</li>
 				<li className="navlink text-[25px] sm:text-[30px]">
-					<ScrollLink to="about">About</ScrollLink>
+					<ScrollLink to="about">
+						<div onClick={closeNav}>About</div>
+					</ScrollLink>
 				</li>
 				<li className="navlink text-[25px] sm:text-[30px]">
-					<ScrollLink to="services">Services</ScrollLink>
+					<ScrollLink to="services">
+						<div onClick={closeNav}>Services</div>
+					</ScrollLink>
 				</li>
 				<li className="navlink text-[25px] sm:text-[30px]">
-					<ScrollLink to="projects">Projects</ScrollLink>
+					<ScrollLink to="projects">
+						<div onClick={closeNav}>Projects</div>
+					</ScrollLink>
 				</li>
 				<li className="navlink text-[25px] sm:text-[30px]">
-					<ScrollLink to="contact">Contact</ScrollLink>
+					<ScrollLink to="contact">
+						<div onClick={closeNav}>Contact</div>
+					</ScrollLink>
 				</li>
 				{/* Cross icon for closing the navbar */}
 				<ImCross

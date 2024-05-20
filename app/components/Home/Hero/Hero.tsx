@@ -75,7 +75,7 @@ const Hero = () => {
 					>
 						<span className="absolute inset-0 w-3 bg-amber-400 transition-all duration-300 ease-out group-hover:w-full block"></span>
 						<span className="relative flex items-center justify-center space-x-3 text-white">
-							<span>About Me</span>
+							<span>hoonkim.tech@gmail.com</span>
 						</span>
 					</button>
 				</div>

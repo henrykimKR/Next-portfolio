@@ -11,6 +11,7 @@ import Review from './Reviews/Review';
 import Contact from './Contact/Contact';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Footer from './Footer/Footer';
 
 // Adding all homepage related components
 const Home = () => {
@@ -38,6 +39,7 @@ const Home = () => {
 			<Price />
 			<Review />
 			<Contact />
+			<Footer />
 		</div>
 	);
 };

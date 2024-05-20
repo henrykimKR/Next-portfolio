@@ -11,7 +11,7 @@ const oswald = Oswald({
 
 export const metadata: Metadata = {
 	title: 'Hoon Kim | Portfolio',
-	description: 'Portfolio Websiteß',
+	description: 'Portfolio Website',
 };
 
 export default function RootLayout({
@@ -24,7 +24,7 @@ export default function RootLayout({
 			<body className={`${oswald.className} bg-[#212428]`}>
 				<ResponsiveNav />
 				{children}
-				<Footer />
+				{/* <Footer /> */}
 			</body>
 		</html>
 	);

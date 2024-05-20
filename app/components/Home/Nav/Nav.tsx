@@ -1,8 +1,8 @@
-import Link from 'next/link';
 import React from 'react';
 import { FaDownload } from 'react-icons/fa';
 import { HiBars3BottomRight } from 'react-icons/hi2';
-import ScrollLink from '../ScrollLink';
+import ScrollLink from '../../Helper/ScrollLink';
+import Link from 'next/link';
 
 interface Props {
 	openNav: () => void;
@@ -11,7 +11,7 @@ interface Props {
 // NavBar Components
 const Nav = ({ openNav }: Props) => {
 	return (
-		<nav className="h-[9vh] w-full bg-[#181a1d] fixed top-0 z-50">
+		<nav className="h-[8vh] w-full bg-[#181a1d] fixed top-0 z-50">
 			<div className="flex items-center justify-between w-[90%] xl:w-[80%] h-full mx-auto">
 				{/* Logo */}
 				<div className="text-[35px] font-semibold text-white">

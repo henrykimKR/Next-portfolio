@@ -1,5 +1,6 @@
 import React from 'react';
 import { BiEnvelope, BiMapPin, BiPhone } from 'react-icons/bi';
+import ScrollLink from '../../Helper/ScrollLink';
 
 const Footer = () => {
 	return (
@@ -26,16 +27,16 @@ const Footer = () => {
 						Quick Links
 					</h1>
 					<p className="text-[15px] text-white opacity-80 mb-[1rem] cursor-pointer hover:text-yellow-300">
-						About
+						<ScrollLink to="about">About</ScrollLink>
 					</p>
 					<p className="text-[15px] text-white opacity-80 mb-[1rem] cursor-pointer hover:text-yellow-300">
-						Services
+						<ScrollLink to="services">Services</ScrollLink>
 					</p>
 					<p className="text-[15px] text-white opacity-80 mb-[1rem] cursor-pointer hover:text-yellow-300">
-						Project
+						<ScrollLink to="projects">Projects</ScrollLink>
 					</p>
 					<p className="text-[15px] text-white opacity-80 mb-[1rem] cursor-pointer hover:text-yellow-300">
-						Contact
+						<ScrollLink to="contact">Contact</ScrollLink>
 					</p>
 				</div>
 				{/* third part */}
