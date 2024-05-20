@@ -11,7 +11,7 @@ interface Props {
 // NavBar Components
 const Nav = ({ openNav }: Props) => {
 	return (
-		<div className="h-[13vh] bg-[#181a1d] sticky top-0 z-50">
+		<nav className="h-[9vh] w-full bg-[#181a1d] fixed top-0 z-50">
 			<div className="flex items-center justify-between w-[90%] xl:w-[80%] h-full mx-auto">
 				{/* Logo */}
 				<div className="text-[35px] font-semibold text-white">
@@ -58,7 +58,7 @@ const Nav = ({ openNav }: Props) => {
 					/>
 				</div>
 			</div>
-		</div>
+		</nav>
 	);
 };
 

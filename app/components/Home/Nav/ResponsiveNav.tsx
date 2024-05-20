@@ -1,6 +1,6 @@
 'use client'; // Convert a server component to a client component.(By default a server component in next.js
-
-import React, { useState } from 'react'; // useState: One of the React hooks that allows you to manage state in functional components.
+// useState: One of the React hooks that allows you to manage state in functional components.
+import React, { useState } from 'react';
 import Nav from './Nav';
 import MobileNav from './MobileNav';
 
