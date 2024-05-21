@@ -1,11 +1,25 @@
 /* eslint-disable react/no-unescaped-entities */
-import { BiCheckCircle } from 'react-icons/bi';
+import { BiCheckCircle, BiClipboard } from 'react-icons/bi';
 import Image from 'next/image';
-import React from 'react';
+import React, { useState } from 'react';
+import { copyText } from '../../Helper/utils';
 
-const Hero = () => {
+const Hero: React.FC = () => {
+	const [isCopied, setIsCopied] = useState(false);
+	const [isHovered, setIsHovered] = useState(false);
+
+	const handleCopy = (text: string) => {
+		copyText(text);
+		setIsCopied(true);
+
+		// Reset the message after a few seconds
+		setTimeout(() => {
+			setIsCopied(false);
+		}, 2000);
+	};
+
 	return (
-		<div className="h-[87vh] flex justify-center flex-col">
+		<div className="h-[87vh] flex justify-center flex-col ">
 			<div className="w-[80%] mx-auto grid grid-cols-2 lg:grid-cols-5 items-center gap-[5rem]">
 				<div className="col-span-2 hidden sm:block">
 					{/* Image */}
@@ -68,16 +82,31 @@ const Hero = () => {
 						cupiditate perferendis atque dolorum quia adipisci quaerat dicta
 						voluptatem veritatis asperiores numquam voluptatum.
 					</p>
-					<button
-						data-aos="zoom-in"
-						data-aos-delay="1200"
-						className="group mt-[2rem] relative h-12 w-48 overflow-hidden rounded-full bg-red-500 text-lg shadow"
+					<div
+						className="relative inline-block mt-[2rem]"
+						onMouseEnter={() => setIsHovered(true)}
+						onMouseLeave={() => setIsHovered(false)}
 					>
-						<span className="absolute inset-0 w-3 bg-amber-400 transition-all duration-300 ease-out group-hover:w-full block"></span>
-						<span className="relative flex items-center justify-center space-x-3 text-white">
-							<span>hoonkim.tech@gmail.com</span>
-						</span>
-					</button>
+						<button
+							onClick={() => handleCopy('hoonkim.tech@gmail.com')}
+							data-aos="zoom-in"
+							data-aos-delay="1200"
+							className="group h-12 w-60 overflow-hidden rounded-full bg-red-500 text-lg shadow flex items-center justify-center"
+						>
+							<span className="absolute inset-0 w-3 bg-amber-400 transition-all duration-300 ease-out group-hover:w-full block"></span>
+							<span className="relative flex items-center justify-center space-x-3 text-white">
+								<BiClipboard className="text-white mr-1" />
+								<span>hoonkim.tech@gmail.com</span>
+							</span>
+						</button>
+						<div
+							className={`absolute top-1/2 left-full ml-4 transform -translate-y-1/2 whitespace-nowrap text-green-500 transition-opacity duration-300 ${
+								isHovered ? 'opacity-100' : 'opacity-0'
+							}`}
+						>
+							{isCopied ? 'Copied to clipboard!' : 'Click to copy'}
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

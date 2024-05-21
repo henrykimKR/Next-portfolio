@@ -22,22 +22,27 @@ const Footer = () => {
 					</p>
 				</div>
 				{/* second part */}
-				<div className="md:mx-auto ">
+				<div className="md:mx-auto">
 					<h1 className="text-white font-semibold mb-[1.4rem] text-[17px]">
 						Quick Links
 					</h1>
-					<p className="text-[15px] text-white opacity-80 mb-[1rem] cursor-pointer hover:text-yellow-300">
-						<ScrollLink to="about">About</ScrollLink>
-					</p>
-					<p className="text-[15px] text-white opacity-80 mb-[1rem] cursor-pointer hover:text-yellow-300">
-						<ScrollLink to="services">Services</ScrollLink>
-					</p>
-					<p className="text-[15px] text-white opacity-80 mb-[1rem] cursor-pointer hover:text-yellow-300">
-						<ScrollLink to="projects">Projects</ScrollLink>
-					</p>
-					<p className="text-[15px] text-white opacity-80 mb-[1rem] cursor-pointer hover:text-yellow-300">
-						<ScrollLink to="contact">Contact</ScrollLink>
-					</p>
+					<div className="grid grid-cols-2 gap-4">
+						<p className="text-[15px] text-white opacity-80 mb-[1rem] cursor-pointer hover:text-yellow-300">
+							<ScrollLink to="home">Home</ScrollLink>
+						</p>
+						<p className="text-[15px] text-white opacity-80 mb-[1rem] cursor-pointer hover:text-yellow-300">
+							<ScrollLink to="about">About</ScrollLink>
+						</p>
+						<p className="text-[15px] text-white opacity-80 mb-[1rem] cursor-pointer hover:text-yellow-300">
+							<ScrollLink to="services">Services</ScrollLink>
+						</p>
+						<p className="text-[15px] text-white opacity-80 mb-[1rem] cursor-pointer hover:text-yellow-300">
+							<ScrollLink to="projects">Projects</ScrollLink>
+						</p>
+						<p className="text-[15px] text-white opacity-80 mb-[1rem] cursor-pointer hover:text-yellow-300">
+							<ScrollLink to="contact">Contact</ScrollLink>
+						</p>
+					</div>
 				</div>
 				{/* third part */}
 				<div className="lg:mx-auto ">
