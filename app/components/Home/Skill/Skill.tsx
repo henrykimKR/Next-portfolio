@@ -8,7 +8,7 @@ const Skill = () => {
 			<Heading headingPrimary="Explore My Skills" headingSub="My Skills" />
 			<div className="grid w-[80%] mt-[5rem] mx-auto grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[1rem] items-center">
 				{/* Skill Card */}
-				<div data-aos="flit-left">
+				<div data-aos="fade-right">
 					<SkillCard image="/images/react.svg" percent="90" title="React" />
 				</div>
 				<div data-aos="fade-right" data-aos-delay="200">

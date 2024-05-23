@@ -6,12 +6,13 @@ import React, { useEffect } from 'react';
 import Service from './Services/Service';
 import Skill from './Skill/Skill';
 import Project from './Projects/Project';
-import Price from './Price/Price';
+// import Price from './Price/Price';
 import Review from './Reviews/Review';
 import Contact from './Contact/Contact';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Footer from './Footer/Footer';
+import Experience from './Experience/Experience';
 
 // Adding all homepage related components
 const Home = () => {
@@ -33,10 +34,11 @@ const Home = () => {
 		<div className="overflow-hidden" id="home">
 			<Hero />
 			<AboutMe />
+			<Experience />
 			<Service />
 			<Skill />
 			<Project />
-			<Price />
+			{/* <Price /> */}
 			<Review />
 			<Contact />
 			<Footer />

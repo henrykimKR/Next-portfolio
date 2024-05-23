@@ -43,7 +43,7 @@ const Nav = ({ openNav }: Props) => {
 						download="Resume"
 						target="_blank"
 					>
-						<button className="group relative h-12 w-48 overflow-hidden rounded-full bg-red-500 text-lg shadow">
+						<button className="group relative h-12 w-40 overflow-hidden rounded-full bg-red-500 text-lg shadow">
 							<span className="absolute inset-0 w-3 bg-amber-400 transition-all duration-300 ease-out group-hover:w-full block"></span>
 							<span className="relative flex items-center justify-center space-x-3 text-white">
 								<FaDownload />

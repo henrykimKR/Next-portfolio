@@ -4,7 +4,7 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 import { copyText } from '../../Helper/utils';
 
-const Hero: React.FC = () => {
+const Hero = () => {
 	const [isCopied, setIsCopied] = useState(false);
 	const [isHovered, setIsHovered] = useState(false);
 
@@ -95,7 +95,7 @@ const Hero: React.FC = () => {
 						>
 							<span className="absolute inset-0 w-3 bg-amber-400 transition-all duration-300 ease-out group-hover:w-full block"></span>
 							<span className="relative flex items-center justify-center space-x-3 text-white">
-								<BiClipboard className="text-white mr-1" />
+								<BiClipboard />
 								<span>hoonkim.tech@gmail.com</span>
 							</span>
 						</button>

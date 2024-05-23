@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Oswald } from 'next/font/google';
 import './globals.css';
 import ResponsiveNav from './components/Home/Nav/ResponsiveNav';
-import Footer from './components/Home/Footer/Footer';
+// import Footer from './components/Home/Footer/Footer';
 
 const oswald = Oswald({
 	weight: ['200', '300', '400', '500', '600', '700'],
@@ -10,7 +10,7 @@ const oswald = Oswald({
 });
 
 export const metadata: Metadata = {
-	title: 'Hoon Kim | Portfolio',
+	title: 'Hoon Kim | Software Developer',
 	description: 'Portfolio Website',
 };
 
