@@ -1,5 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
-import { BiCheckCircle, BiClipboard } from 'react-icons/bi';
+import {
+	BiLogoLinkedinSquare,
+	BiLogoGithub,
+	BiClipboard,
+} from 'react-icons/bi';
 import Image from 'next/image';
 import React, { useState } from 'react';
 import { copyText } from '../../Helper/utils';
@@ -28,7 +32,7 @@ const Hero = () => {
 						className="mx-auto w-[150px] h-[150px] md:w-[200px] md:h-[200px] lg:w-[300px] lg:h-[300px] xl:w-[400px] xl:h-[400px]"
 					>
 						<Image
-							src="/images/hero.png"
+							src="/images/hero_.png"
 							alt="Hero"
 							width={400}
 							height={400}
@@ -41,13 +45,25 @@ const Hero = () => {
 						data-aos-delay="2000"
 						className="bg-red-700 flex p-4 rounded-lg justify-between items-center"
 					>
-						<BiCheckCircle className="w-[2.5rem] h-[2.5rem] lg:w-[2rem] lg:h-[2rem] xl:w-[3rem] xl:h-[3rem] text-white" />
+						<div className="flex space-x-2">
+							<a
+								href="https://www.linkedin.com/in/henrykimkr"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<BiLogoLinkedinSquare className="w-[2.5rem] h-[2.5rem] lg:w-[2rem] lg:h-[2rem] xl:w-[3rem] xl:h-[3rem] text-white" />
+							</a>
+							<a
+								href="https://github.com/henrykimKR"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<BiLogoGithub className="w-[2.5rem] h-[2.5rem] lg:w-[2rem] lg:h-[2rem] xl:w-[3rem] xl:h-[3rem] text-white" />
+							</a>
+						</div>
 						<h1 className="text-[20px] xl:text-[30px] text-yellow-300 font-bold">
-							1965k+{' '}
+							Fullstack Web Developer{' '}
 						</h1>
-						<p className="text-[20px] md:text-[18px] lg:text-[16px] xl:text-[20px] font-medium text-white">
-							Complete Projects
-						</p>
 					</div>
 				</div>
 				<div className="col-span-3">
@@ -65,13 +81,13 @@ const Hero = () => {
 					>
 						Hoon <span className="text-red-500">Kim!</span>
 					</h1>
-					<h1
+					{/* <h1
 						data-aos="fade-left"
 						data-aos-delay="800"
 						className="text-[24px] lg:text-[28px] xl:text-[35px] text-white text-opacity-80"
 					>
 						Fullstack Web Developer
-					</h1>
+					</h1> */}
 					<p
 						data-aos="fade-right"
 						data-aos-delay="1000"

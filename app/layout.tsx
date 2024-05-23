@@ -20,6 +20,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
+		//
 		<html lang="en">
 			<body className={`${oswald.className} bg-[#212428]`}>
 				<ResponsiveNav />

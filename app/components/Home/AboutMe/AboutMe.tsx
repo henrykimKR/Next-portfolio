@@ -29,12 +29,12 @@ const AboutMe = () => {
 						text2="Language : English, Korean"
 					/>
 					<AboutInfoBox
-						text1="Email : hoonkim.tech@gmail.com"
-						text2="LinkedIn : linkedin.com/in/henrykimkr"
+						text1={`Education: Seneca College [Computer Programming]`}
+						text2="Email : hoonkim.tech@gmail.com"
 					/>
 					<AboutInfoBox
-						text1="Github : github.com/henrykimKR"
-						text2="Last Name : Kim"
+						text1="LinkedIn : linkedin.com/in/henrykimkr"
+						text2="Github : github.com/henrykimKR"
 					/>
 				</div>
 				{/* Image */}
