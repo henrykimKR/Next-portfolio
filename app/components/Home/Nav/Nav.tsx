@@ -26,6 +26,9 @@ const Nav = ({ openNav }: Props) => {
 						<ScrollLink to="about">About</ScrollLink>
 					</li>
 					<li className="navlink">
+						<ScrollLink to="experience">Experience</ScrollLink>
+					</li>
+					<li className="navlink">
 						<ScrollLink to="services">Services</ScrollLink>
 					</li>
 					<li className="navlink">

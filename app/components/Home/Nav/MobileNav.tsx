@@ -32,6 +32,11 @@ const MobileNav = ({ closeNav, showNav }: Props) => {
 					</ScrollLink>
 				</li>
 				<li className="navlink text-[25px] sm:text-[30px]">
+					<ScrollLink to="experience">
+						<div onClick={closeNav}>Experience</div>
+					</ScrollLink>
+				</li>
+				<li className="navlink text-[25px] sm:text-[30px]">
 					<ScrollLink to="services">
 						<div onClick={closeNav}>Services</div>
 					</ScrollLink>

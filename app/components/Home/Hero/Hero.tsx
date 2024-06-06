@@ -51,14 +51,14 @@ const Hero = () => {
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								<BiLogoLinkedinSquare className="w-[2.5rem] h-[2.5rem] lg:w-[2rem] lg:h-[2rem] xl:w-[3rem] xl:h-[3rem] text-white" />
+								<BiLogoLinkedinSquare className="w-[1.5rem] h-[1.5rem] lg:w-[2rem] lg:h-[2rem] xl:w-[3rem] xl:h-[3rem] text-white" />
 							</a>
 							<a
 								href="https://github.com/henrykimKR"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								<BiLogoGithub className="w-[2.5rem] h-[2.5rem] lg:w-[2rem] lg:h-[2rem] xl:w-[3rem] xl:h-[3rem] text-white" />
+								<BiLogoGithub className="w-[1.5rem] h-[1.5rem] lg:w-[2rem] lg:h-[2rem] xl:w-[3rem] xl:h-[3rem] text-white" />
 							</a>
 						</div>
 						<h1 className="text-[20px] xl:text-[30px] text-yellow-300 font-bold">

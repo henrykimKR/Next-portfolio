@@ -1,9 +1,42 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Heading from '../../Helper/Heading';
+import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
 
 const Contact = () => {
+	const form = useRef<HTMLFormElement | null>(null);
+
+	const sendEmail = async (event: React.FormEvent<HTMLFormElement>) => {
+		event.preventDefault();
+		if (
+			process.env.NEXT_PUBLIC_MAIL_SERVICE_KEY &&
+			process.env.NEXT_PUBLIC_MAIL_TEMPLATE_KEY &&
+			process.env.NEXT_PUBLIC_MAIL_PUBLIC_KEY &&
+			form.current
+		) {
+			try {
+				await emailjs.sendForm(
+					process.env.NEXT_PUBLIC_MAIL_SERVICE_KEY,
+					process.env.NEXT_PUBLIC_MAIL_TEMPLATE_KEY,
+					form.current,
+					process.env.NEXT_PUBLIC_MAIL_PUBLIC_KEY
+				);
+				toast.success('Email sent successfully');
+				clearForm();
+			} catch (error) {
+				toast.error('Failed to send email');
+			}
+		}
+	};
+
+	const clearForm = () => {
+		if (form.current) {
+			form.current.reset();
+		}
+	};
+
 	return (
-		<div className="pt-[5rem] pb-[3rem]" id="contact">
+		<div className="mt-[5rem] mb-[3rem]" id="contact">
 			<Heading headingPrimary="Get In Touch with us" headingSub="Contact Us" />
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-[2rem] mt-[4rem] items-center w-[80%] m-auto">
 				{/* Info content */}
@@ -24,33 +57,43 @@ const Contact = () => {
 					</h1>
 				</div>
 				{/* Form content */}
-				<div>
+				<form ref={form} onSubmit={sendEmail}>
 					<div className="grid grid-cols-1 sm:grid-cols-2 gap-[1rem] items-center">
 						<input
+							name="user_name"
 							type="text"
 							placeholder="Name"
 							className="py-[0.7rem] outline-none text-white bg-gray-800 rounded-md px-4"
+							required
 						/>
 						<input
+							name="user_email"
 							type="email"
 							placeholder="Email"
 							className="py-[0.7rem] outline-none text-white bg-gray-800 rounded-md px-4"
+							required
 						/>
 					</div>
 					<input
+						name="subject"
 						type="text"
 						placeholder="Subject"
 						className="py-[0.7rem] mt-[1.5rem] w-full mb-[1.5rem] outline-none text-white bg-gray-800 rounded-md px-4"
 					/>
 					<textarea
+						name="message"
 						rows={4}
 						placeholder="Message"
 						className="py-[0.7rem] w-full mb-[1.5rem] outline-none text-white bg-gray-800 rounded-md px-4"
+						required
 					></textarea>
-					<button className="py-[0.7rem] mb-[1.5rem] w-full outline-none text-white bg-blue-700 hover:bg-blue-900 rounded-md px-4">
+					<button
+						type="submit"
+						className="py-[0.7rem] mb-[1.5rem] w-full outline-none text-white bg-blue-700 hover:bg-blue-900 rounded-md px-4"
+					>
 						Submit
 					</button>
-				</div>
+				</form>
 			</div>
 		</div>
 	);

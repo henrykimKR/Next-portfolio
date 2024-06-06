@@ -1,5 +1,11 @@
 import React from 'react';
-import { BiEnvelope, BiMapPin, BiPhone } from 'react-icons/bi';
+import {
+	BiEnvelope,
+	BiMapPin,
+	BiPhone,
+	BiLogoLinkedinSquare,
+	BiLogoGithub,
+} from 'react-icons/bi';
 import ScrollLink from '../../Helper/ScrollLink';
 
 const Footer = () => {
@@ -11,27 +17,46 @@ const Footer = () => {
 					<div className="text-[35px] font-semibold text-white">
 						Hoo<span className="text-red-500">N</span>
 					</div>
-					<h1 className="text-[14px] mt-[0.5rem] text-white opacity-70">
+					<p className="mt-[1px] text-yellow-300 underline font-semibold">
+						hoonkim.tech@gmail.com
+					</p>
+					<h1 className="text-[14px] mt-[2px] text-white opacity-70">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quis
 						repellat fuga, sit beatae quos quaerat quo aspernatur esse
 						perferendis quia explicabo iure! Labore esse numquam nisi distinctio
 						facilis voluptate!
 					</h1>
-					<p className="mt-[1.3rem] text-yellow-300 underline font-semibold">
-						hoonkim.tech@gmail.com
-					</p>
+					<div className="pt-[8px] flex justify-start gap-2">
+						<a
+							href="https://www.linkedin.com/in/henrykimkr"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<BiLogoLinkedinSquare className="w-[1.5rem] h-[1.5rem] lg:w-[1.5rem] lg:h-[1.5rem] xl:w-[2rem] xl:h-[2rem] text-white" />
+						</a>
+						<a
+							href="https://github.com/henrykimKR"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<BiLogoGithub className="w-[1.5rem] h-[1.5rem] lg:w-[1.5rem] lg:h-[1.5rem] xl:w-[2rem] xl:h-[2rem] text-white" />
+						</a>
+					</div>
 				</div>
 				{/* second part */}
 				<div className="md:mx-auto">
 					<h1 className="text-white font-semibold mb-[1.4rem] text-[17px]">
 						Quick Links
 					</h1>
-					<div className="grid grid-cols-2 gap-4">
+					<div className="grid grid-cols-2 gap-x-4 gap-y-2">
 						<p className="text-[15px] text-white opacity-80 mb-[1rem] cursor-pointer hover:text-yellow-300">
 							<ScrollLink to="home">Home</ScrollLink>
 						</p>
 						<p className="text-[15px] text-white opacity-80 mb-[1rem] cursor-pointer hover:text-yellow-300">
 							<ScrollLink to="about">About</ScrollLink>
+						</p>
+						<p className="text-[15px] text-white opacity-80 mb-[1rem] cursor-pointer hover:text-yellow-300">
+							<ScrollLink to="experience">Experience</ScrollLink>
 						</p>
 						<p className="text-[15px] text-white opacity-80 mb-[1rem] cursor-pointer hover:text-yellow-300">
 							<ScrollLink to="services">Services</ScrollLink>

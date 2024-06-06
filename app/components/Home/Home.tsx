@@ -13,6 +13,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Footer from './Footer/Footer';
 import Experience from './Experience/Experience';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 // Adding all homepage related components
 const Home = () => {
@@ -42,6 +44,7 @@ const Home = () => {
 			<Review />
 			<Contact />
 			<Footer />
+			<ToastContainer />
 		</div>
 	);
 };

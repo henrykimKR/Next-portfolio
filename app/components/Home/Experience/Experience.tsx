@@ -9,13 +9,13 @@ const Experience = () => {
 				headingPrimary="How I have contributed"
 				headingSub="Work Experience"
 			/>
-			<div className="w-[80%] mt-[4rem] mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-[3rem] items-center">
+			<div className="w-[80%] mt-[4rem] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-[3rem] items-center">
 				<div data-aos="fade-right">
 					<ExperienceCard
 						image="/images/l1.png"
 						company="Pawniverse Inc, Toronto"
 						duration="Aug 2023 - Feb 2024"
-						title="Software Developer"
+						title="App Developer"
 						description={`
                     	- Built pet app with Flutter\n
                     	- Optimized server integration for profiles\n

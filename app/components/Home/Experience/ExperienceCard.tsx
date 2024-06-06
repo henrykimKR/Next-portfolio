@@ -27,7 +27,7 @@ const ExperienceCard = ({
 			<div className="rounded-xl shadow-xl transition-all duration-500">
 				{/* Front Side */}
 				<div
-					className={`pt-[64px] pb-[64px] rounded-xl bg-gray-900 items-center justify-center ${
+					className={`pt-[52px] pb-[52px] rounded-xl bg-gray-900 items-center justify-center ${
 						isHovered ? 'hidden' : ''
 					}`}
 				>
