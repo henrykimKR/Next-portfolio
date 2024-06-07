@@ -8,7 +8,7 @@ interface Props {
 
 const SkillCard = ({ image, title }: Props) => {
 	return (
-		<div className="p-6 hover:bg-red-700 duration-300 transition-all cursor-pointer text-center rounded-lg bg-gray-900">
+		<div className="p-6 hover:bg-red-700 duration-300 transition-all text-center rounded-lg bg-gray-900">
 			{/* image */}
 			<Image
 				src={image}

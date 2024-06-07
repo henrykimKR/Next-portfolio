@@ -9,7 +9,7 @@ const Experience = () => {
 				headingPrimary="How I have contributed"
 				headingSub="Work Experience"
 			/>
-			<div className="w-[80%] mt-[4rem] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-[3rem] items-center">
+			<div className="w-[60%] mt-[4rem] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-[3rem] items-center">
 				<div data-aos="fade-right">
 					<ExperienceCard
 						image="/images/l1.png"
@@ -28,7 +28,7 @@ const Experience = () => {
 						image="/images/l2.png"
 						company="City of Toronto, Toronto"
 						duration="Jan 2023 - Apr 2023"
-						title="Data Anaylst"
+						title="Data Analyst"
 						description={`
                     	- Automated script conversion with Python\n
                     	- Led team knowledge sharing session\n

@@ -57,6 +57,7 @@ const ExperienceCard = ({
 						className={
 							'ml-[4px] text-lg text-left text-white text-opacity-60 leading-[20px] whitespace-pre-line '
 						}
+						style={{ lineHeight: '1.1' }}
 					>
 						{description}
 					</p>
